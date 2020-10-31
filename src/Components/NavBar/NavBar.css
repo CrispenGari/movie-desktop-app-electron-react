@@ -1,0 +1,29 @@
+.navbar {
+  color: white;
+  display: flex;
+  padding: 5px 10px 0 10px;
+  border-bottom: 1px solid lightseagreen;
+  position: sticky;
+  background-color: inherit;
+  z-index: 1;
+}
+.navbar__item {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-left: 10px;
+  padding: 0 5px 5px 5px;
+  width: 200px !important;
+  text-align: center;
+  transition: transform 100ms ease-in-out;
+  user-select: none;
+  user-zoom: none;
+}
+.navbar__item:hover {
+  transform: scale(1.1);
+}
+.navbar__item--selected {
+  border-bottom: 5px solid lightseagreen;
+}

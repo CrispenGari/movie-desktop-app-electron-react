@@ -1,0 +1,53 @@
+.movie {
+  margin: 10px;
+  color: white;
+  width: 230px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 100ms ease-out;
+}
+.movie:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.movie > img {
+  width: 230px;
+  max-height: 150px;
+  object-fit: contain !important;
+}
+.movie__info {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie__info > p {
+  font-size: 15px;
+  font-weight: 100;
+  text-align: start;
+}
+.movie__infoDescrp {
+  font-size: 15px;
+  font-weight: 100;
+  text-align: start;
+  color: gray;
+}
+.movie__infoDateLikes {
+  display: none;
+  display: flex;
+  align-items: center;
+}
+.movie__infoDateLikes > .MuiSvgIcon-root {
+  font-size: 15px;
+  margin-left: 5px;
+}
+.movie__infoDateLikes {
+  display: none;
+}
+.movie:hover > .movie__info > .movie__infoDateLikes {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
