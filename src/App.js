@@ -16,8 +16,8 @@ function App() {
     return () => {
       unsubscribe()
     }
-  }, [])
-  if(!user){
+  }, [dispatch])
+  if(user){
      return (
     <div className="app">
        <Header/>
